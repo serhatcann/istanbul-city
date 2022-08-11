@@ -1,20 +1,21 @@
 import styled from 'styled-components';
+import HEX_COLORS from '../../constants/colors';
 
 const Sea = styled.div`
 	height: 75%;
-	background: rgb(12, 65, 173);
+	background: ${HEX_COLORS.blue.sea_dark};
 	background: linear-gradient(
 		0deg,
-		rgba(12, 65, 173, 1) 0%,
-		rgba(19, 66, 169, 1) 50%,
-		rgba(79, 72, 139, 1) 70%,
-		rgba(231, 87, 64, 1) 97%,
-		rgba(235, 87, 62, 1) 100%
+		${HEX_COLORS.blue.sea_dark} 0%,
+		${HEX_COLORS.blue.sea_light} 50%,
+		${HEX_COLORS.purple} 70%,
+		${HEX_COLORS.orange} 97%,
+		${HEX_COLORS.orange} 100%
 	);
 `;
 
 const SeaSide = () => {
-	return <Sea>SeaSide</Sea>;
+	return <Sea></Sea>;
 };
 
 export default SeaSide;
